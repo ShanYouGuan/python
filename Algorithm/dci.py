@@ -1,5 +1,2 @@
-print(111)
-print('sssssss')
-print('1111111111')
-print('ssssssssssssssssssssssssssssssss')
-print('ssssssssssssssss')
+dci = {}
+dci['张三'] = 25
