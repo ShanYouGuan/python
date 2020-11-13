@@ -8,6 +8,11 @@ def is_palindrome(input_list):
         print("This List are not palindrome")
 
 
+def show_list(input_list):
+    for i in range(0, len(input_list)):
+        print(i)
+
+
 def is_palindrome1(input_list):
     list = input_list
     list.reverse()
@@ -17,6 +22,17 @@ def is_palindrome1(input_list):
         print("This List are not palindrome")
 
 
+def is_palindrome2(input_list):
+    new_list = []
+    for i in range(0, len(input_list)):
+        new_list.append(input_list[len(input_list)-1-i])
+    if new_list == input_list:
+        print("This List are  palindrome")
+    else:
+        print("This List are not palindrome")
+
+
 List = [1, 2, 3, 2, 1]
 is_palindrome(List)
 is_palindrome1(List)
+is_palindrome2(List)
