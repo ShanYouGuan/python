@@ -36,3 +36,4 @@ List = [1, 2, 3, 2, 1]
 is_palindrome(List)
 is_palindrome1(List)
 is_palindrome2(List)
+show_list(List)
