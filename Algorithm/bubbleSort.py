@@ -4,7 +4,7 @@ def bubble_sort(List_1):
         print("第%d趟排序" % (i+1))
         for j in range(len(List_1)-i-1):
             if List_1[j] > List_1[j+1]:
-                List_1[j], List_1[j+1] = List_1[j+1],List_1[j]
+                List_1[j], List_1[j+1] = List_1[j+1], List_1[j]
                 flag += 1
 
         if flag == 0:
