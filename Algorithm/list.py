@@ -32,8 +32,15 @@ def is_palindrome2(input_list):
         print("This List are not palindrome")
 
 
+def return_list(List):
+    return List
+
+
 List = [1, 2, 3, 2, 1]
 is_palindrome(List)
 is_palindrome1(List)
 is_palindrome2(List)
 show_list(List)
+return_list(List)
+print('这是在my-work分支上做修改')
+print('2020-11-13')
