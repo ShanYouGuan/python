@@ -1,11 +1,49 @@
-import random
-def Getrandomnum(bits):
-    char_set = [chr(i)for i in range(65, 91)]
-    num_set = [chr(i) for i in range(48, 58)]
-    total_set = char_set + num_set
-    for j in range(200):
-        value_set = "".join(random.sample(total_set, bits))
-        print(value_set)
-if __name__ =='__main__':
-    Getrandomnum(8)
+class A(object):
+    def __init__(self):
+        print("enter A")
 
+        super(A, self).__init__()  # new
+        print("leave A")
+
+
+
+class B(object):
+    def __init__(self):
+        print("enter B")
+        #super(B, self).__init__()  # new
+        print("leave B")
+
+
+
+class C(A):
+    def __init__(self):
+        print("enter C")
+        super(C, self).__init__()
+        print("leave C")
+
+
+
+class D(A):
+    def __init__(self):
+        print("enter D")
+        super(D, self).__init__()
+        print("leave D")
+
+
+
+class E(B,C):
+    def __init__(self):
+        print("enter E")
+        super(E, self).__init__()  # change
+        print("leave E")
+
+
+class F(E, D):
+    def __init__(self):
+        print("enter F")
+        super(F, self).__init__()  # change
+        print("leave F")
+
+
+f = F()
+print(F.__mro__)
